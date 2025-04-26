@@ -1,0 +1,140 @@
+/* Privacy Policy Styles */
+.privacy-policy {
+    padding: 2rem 1rem;
+    background-color: #f9f9f9;
+    /* Light background for readability */
+    color: #333;
+    /* Dark text for contrast */
+    display: flex;
+    flex-direction: column;
+}
+
+.privacy-policy .container {
+    margin: 0 auto;
+    /* Center the container */
+    line-height: 1.6;
+    /* Improve readability */
+    font-size: 1rem;
+    /* Standard font size */
+    display: flex;
+    flex-direction: column;
+}
+
+.privacy-policy h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #007bff;
+    /* Accent color for headings */
+}
+
+.privacy-policy h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #333;
+    /* Darker heading color for contrast */
+}
+
+.privacy-policy p,
+.privacy-policy ul {
+    margin: 1rem 0;
+    padding: 0;
+}
+
+.privacy-policy ul {
+    list-style-type: disc;
+    /* Bullet points for lists */
+    padding-left: 1.5rem;
+    /* Indent list items */
+}
+
+.privacy-policy ul li {
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 768px) {
+    .privacy-policy {
+        padding: 3rem;
+        flex-direction: row;
+    }
+
+    .privacy-policy h1 {
+        font-size: 2.5rem;
+    }
+
+    .privacy-policy h2 {
+        font-size: 1.8rem;
+    }
+
+    .privacy-policy .container {
+        font-size: 1.1rem;
+        /* Slightly larger text on larger screens */
+        flex-direction: row;
+    }
+}
+
+.privacy-policy {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+}
+
+.sidebar {
+    width: 100%;
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    top: 0;
+    height: auto;
+}
+
+.sidebar nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    margin: 1rem 0;
+}
+
+.sidebar nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.sidebar nav ul li a:hover {
+    color: #0056b3;
+}
+
+.content {
+    width: 100%;
+    padding-top: 2rem;
+}
+
+@media (min-width: 768px) {
+    .privacy-policy {
+        flex-direction: row;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 20%;
+        border-right: 1px solid #ddd;
+        border-bottom: none;
+        position: sticky;
+        height: 100vh;
+    }
+
+    .content {
+        width: 80%;
+        padding-left: 2rem;
+        padding-top: 0;
+    }
+}

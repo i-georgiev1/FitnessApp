@@ -1,0 +1,77 @@
+.testimonials-section {
+    background-color: #343a40;
+    /* Dark background */
+    color: #f8f9fa;
+    /* Light text */
+    padding: 4rem 1rem;
+}
+
+.testimonials-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #ffffff;
+    /* White text */
+    font-weight: bold;
+}
+
+.testimonial-card {
+    background-color: #495057;
+    /* Slightly lighter dark background for cards */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    /* Stronger shadow */
+}
+
+.quote-icon {
+    font-size: 2rem;
+    color: #007bff;
+    /* Primary color for the quote icon */
+}
+
+.testimonial-feedback {
+    font-size: 1rem;
+    font-style: italic;
+    color: #dee2e6;
+    /* Light gray for feedback text */
+}
+
+.testimonial-image {
+    width: 80px;
+    height: 80px;
+    border: 3px solid #007bff;
+    /* Accent border */
+}
+
+.testimonial-name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.testimonial-role {
+    font-size: 0.9rem;
+    color: #adb5bd;
+    /* Subtle gray for role */
+}
+
+@media (max-width: 768px) {
+    .testimonial-card {
+        padding: 1.5rem;
+    }
+
+    .testimonial-feedback {
+        font-size: 0.9rem;
+    }
+
+    .testimonial-name {
+        font-size: 1.1rem;
+    }
+}

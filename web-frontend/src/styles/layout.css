@@ -1,0 +1,43 @@
+.navbar,
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+.navbar .container,
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links,
+.footer-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.nav-links li a,
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-primary,
+.btn-secondary {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #007bff;
+    color: #fff;
+}
+
+.btn-secondary {
+    background: #ccc;
+    color: #333;
+}

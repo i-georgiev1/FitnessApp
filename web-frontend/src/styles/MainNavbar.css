@@ -1,0 +1,69 @@
+.white {
+  background-color: white;
+}
+
+
+.futuristic-navbar {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.scrolled-navbar {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 1);
+  border-radius: 20px;
+  opacity: 0.7;
+  animation: fade 1s initial;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.5;
+  }
+
+}
+
+.futuristic-navbar .nav-link,
+.futuristic-navbar .dropdown-item {
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.futuristic-navbar .nav-link:hover,
+.futuristic-navbar .dropdown-item:hover {
+  color: cyan;
+  transform: translateY(-2px);
+}
+
+.navbar-brand img {
+  animation: glow 10s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 10px cyan);
+  }
+
+  25% {
+    filter: drop-shadow(0 0 15px magenta);
+  }
+
+  50% {
+    filter: drop-shadow(0 0 20px yellow);
+  }
+
+  75% {
+    filter: drop-shadow(0 0 25px lime);
+  }
+
+  100% {
+    filter: drop-shadow(0 0 30px orange);
+  }
+
+
+}
+
+.vertical-line {
+  border-left: solid white;
+}

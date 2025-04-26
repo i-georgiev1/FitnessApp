@@ -1,0 +1,107 @@
+/* CoachDashboard.css */
+
+
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.coach-dashboard-header {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 24px;
+}
+
+.coach-dashboard-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.coach-dashboard-card h2 {
+    margin-top: 0;
+}
+
+.coach-dashboard-card p {
+    color: #666;
+}
+
+.coach-dashboard-button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+.coach-dashboard-button:hover {
+    background-color: #0056b3;
+}
+
+.coach-dashboard-sidebar {
+    width: 250px;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.coach-dashboard-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.coach-dashboard-sidebar ul li {
+    margin: 10px 0;
+}
+
+.coach-dashboard-sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.coach-dashboard-sidebar ul li a:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.coach-dashboard-main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.coach-dashboard-greeting-panel {
+    margin-bottom: 20px;
+}
+
+.coach-dashboard-quick-overview {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.coach-dashboard-key-metrics {
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 8px;
+}

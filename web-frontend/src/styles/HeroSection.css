@@ -1,0 +1,44 @@
+/* Define the keyframes for the animation */
+/* @keyframes fadeInRightToLeft {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  } */
+
+/* Apply the animation to the desired element */
+/* .fade-in-right {
+    opacity: 0;
+    animation: fadeInRightToLeft 1.6s ease-out forwards; 
+  } */
+/* 
+.hero-section {
+  position: relative;
+  overflow: hidden;
+}
+ */
+
+.hero-section {
+  padding-top: 10vh;
+}
+
+@media (max-width: 768px) {
+
+  .hero-section .lead,
+  .hero-section h1 {
+    margin: 0 auto;
+    text-align: center;
+    /* Center the heading and lead text */
+  }
+
+  .hero-section .btn {
+    display: block;
+    /* Stack buttons vertically */
+    margin: 10px auto;
+    /* Center buttons */
+  }
+}

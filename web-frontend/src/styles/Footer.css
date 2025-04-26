@@ -1,0 +1,325 @@
+/* Add this to ensure the footer stays at the bottom */
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.services-area {
+    flex: 1;
+    /* Allow this section to grow and fill the space */
+    display: flex;
+    flex-direction: column;
+    /* Ensure items stack vertically */
+}
+
+.wrapper {
+    flex: 1;
+    /* Allow wrapper to grow */
+}
+
+
+.custom-style {
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: rgb(33, 37, 41);
+    /* Dark background for contrast */
+    color: #fff;
+    /* White text for readability */
+    padding: 1.5rem 1rem;
+    /* Padding around the content */
+    text-align: center;
+    /* Center-align text */
+    margin-top: auto;
+    /* Push footer to the bottom */
+}
+
+.footer .container {
+    max-width: 1200px;
+    /* Restrict width for better layout */
+    margin: 0 auto;
+    /* Center container */
+    display: flex;
+    /* Flexbox for layout */
+    flex-direction: column;
+    /* Stack items vertically */
+    align-items: center;
+    /* Center items horizontally */
+    gap: 2rem;
+    /* Increase space between elements */
+}
+
+.footer .divider {
+    width: 100%;
+    max-width: 1200px;
+    /* Match the width of the containers */
+    height: 1px;
+    background-color: #ccc;
+    margin: 1rem auto;
+    /* Center the divider */
+}
+
+.footer .bottom-container {
+    max-width: 1200px;
+    /* Match the width of the containers */
+    margin: 0 auto;
+    /* Center container */
+    display: flex;
+    /* Flexbox for layout */
+    justify-content: space-between;
+    /* Space between copyright text and social buttons */
+    align-items: center;
+    /* Center-align items vertically */
+    padding: 1rem 0;
+    /* Padding around the content */
+}
+
+.footer .social-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer .social-buttons a {
+    color: #fff;
+    /* White text */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 1.5rem;
+    /* Increase font size */
+    transition: color 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.footer .social-buttons a:hover {
+    color: #007bff;
+    /* Change to accent color on hover */
+}
+
+.footer-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 50%;
+}
+
+.footer-columns .column {
+    flex: 1;
+    width: 33%;
+}
+
+.footer-columns .column h4 {
+    text-align: left;
+    /* Align column names to the left */
+    margin-bottom: 2rem;
+    /* Add more space below column names */
+}
+
+.footer-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    /* Increase space between elements */
+    width: 40%;
+}
+
+.footer-subscribe form {
+    display: flex;
+    gap: 0.5rem;
+    width: 100%;
+    padding-bottom: 3rem;
+}
+
+.footer-subscribe input[type="email"] {
+    flex: 1;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+.footer-subscribe button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+.footer-subscribe button:hover {
+    background-color: #0056b3;
+}
+
+.sub {
+    margin-top: 3.5rem;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 3rem;
+    font-size: 0.9rem;
+}
+
+.footer-contact div {
+    flex: 1;
+    text-align: left;
+    /* Align phone number and email to the left */
+}
+
+.footer-contact p {
+    font-size: 1.2rem !important;
+    /* Increase font size */
+    font-weight: bold;
+    /* Make text bold */
+}
+
+.footer-contact a {
+    color: inherit;
+    /* Inherit color from parent */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.footer p {
+    font-size: 0.9rem;
+    /* Slightly smaller text for copyright */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.footer-links {
+    display: block;
+    /* Block layout for vertical alignment */
+    gap: 1rem;
+    /* More space between links */
+    list-style: none;
+    /* Remove bullet points */
+
+    text-align: left;
+    /* Align links to the left */
+}
+
+.footer-links li {
+    margin-bottom: 1rem;
+    /* Add more margin between the footer links */
+}
+
+.footer-links li a {
+    display: inline-block;
+    /* Ensure the links are inline-block to allow transform */
+    color: #fff;
+    /* White text */
+    text-decoration: none;
+    /* Remove underline */
+    font-size: 1rem;
+    /* Increase font size */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.footer-links li a:hover {
+    color: #007bff;
+    /* Change to accent color on hover */
+    transform: translateX(5px);
+    /* Move to the right on hover */
+}
+
+@media (min-width: 768px) {
+    .footer .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-columns {
+        flex-direction: row;
+    }
+
+    .footer-subscribe {
+        align-items: flex-end;
+    }
+
+    .sub-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .sub {
+        display: none;
+    }
+
+    .footer .container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-columns {
+        width: 100%;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .footer-columns .column h4 {
+        text-align: center;
+        font-size: 1.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .footer-links {
+        text-align: center;
+    }
+
+    .footer-subscribe {
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer .bottom-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .footer .social-buttons {
+        justify-content: center;
+    }
+
+    .footer-contact {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .footer-contact div {
+        text-align: center;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .buttons-container>* {
+        width: 100%;
+    }
+}

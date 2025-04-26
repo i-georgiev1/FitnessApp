@@ -1,0 +1,116 @@
+.features-container {
+    padding: 40px 0;
+}
+
+/* Animation for the card's entrance */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Feature Card Styling */
+.feature-card {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Hover effect: Zoom-in effect without tilt */
+.feature-card:hover {
+    transform: scale(1.1);
+    /* Slight zoom-in effect */
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+    /* Stronger shadow for depth */
+}
+
+/* Icon, title, and text slight upward movement on hover */
+.feature-card:hover .feature-icon,
+.feature-card:hover .card-title,
+.feature-card:hover .card-text {
+    transform: translateY(-5px);
+    /* Slight upward movement of text and icon */
+    transition: transform 0.3s ease;
+}
+
+.feature-card .card-body {
+    padding: 2rem;
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+    transition: transform 0.3s ease;
+}
+
+.feature-card .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.feature-card .card-text {
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.feature-card .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.feature-card .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Flexbox layout for the cards */
+.features-container .d-flex {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    /* Space between the cards */
+    flex-wrap: wrap;
+    /* Allow wrapping if space is tight */
+}
+
+@media (max-width: 767px) {
+    .features-container .d-flex {
+        flex-direction: column;
+        align-items: center;
+        /* Stack cards vertically on smaller screens */
+    }
+
+    .feature-card {
+        width: 80%;
+        /* Make cards smaller on mobile */
+        margin-bottom: 1.5rem;
+        height: auto;
+        /* Allow height to adjust for smaller screens */
+    }
+}

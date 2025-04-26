@@ -1,0 +1,9 @@
+.card-2 {
+  margin-top: 10vh;
+}
+
+.card-2 h1,
+.card-2 p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}

@@ -1,0 +1,67 @@
+.why-choose-us {
+    background-color: #212529 !important;
+    padding: 4rem 1rem;
+}
+
+.why-choose-us h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.why-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+    /* Ensure cards take full height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.why-card:hover {
+    transform: scale(1.05);
+}
+
+.why-icon {
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 1rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /* Center the icon */
+}
+
+.why-card .card-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: white;
+}
+
+.why-card .card-text {
+    font-size: 1rem;
+    color: white;
+    margin-bottom: auto;
+    /* Ensure card text takes available space */
+}
+
+.why-card .btn-primary {
+    background-color: #007bff;
+    border: none;
+    margin-top: 1rem;
+    /* Add margin to ensure consistent spacing */
+}
+
+.why-card .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .why-card {
+        padding: 1.5rem;
+    }
+}

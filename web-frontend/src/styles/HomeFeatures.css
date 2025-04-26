@@ -1,0 +1,80 @@
+.features-overview {
+    background-color: #f8f9fa;
+    /* Dark background */
+    padding: 3rem 1rem;
+}
+
+.features-overview h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #343a40;
+    /* dark text*/
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.feature-card {
+    width: 400px;
+    /* Further increase card size */
+    text-align: center;
+
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    margin: 1rem;
+    /* Add margin to increase space between cards */
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+    /* Slight zoom on hover */
+
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    /* Slightly stronger shadow */
+}
+
+.feature-card .feature-icon {
+    font-size: 3rem;
+    color: #007bff;
+    /* Primary color for icons */
+    margin-bottom: 1rem;
+}
+
+.feature-card .btn {
+    background-color: #007bff;
+    /* Primary button */
+    border: none;
+}
+
+.feature-card .btn:hover {
+    background-color: #0056b3;
+    /* Darker shade on hover */
+}
+
+.feature-card .card-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #343a40;
+    /* Darker text for titles */
+}
+
+.feature-card .card-text {
+    font-size: 1rem;
+    color: #dcdcdc;
+    /* Lighter gray text */
+}
+
+.feature-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the icons */
+}
+
+@media (max-width: 768px) {
+    .feature-card {
+        width: 90%;
+        /* Full width on smaller screens */
+        margin-bottom: 2rem;
+    }
+}

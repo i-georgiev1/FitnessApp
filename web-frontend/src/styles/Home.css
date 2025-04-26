@@ -1,0 +1,31 @@
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #f4f4f4;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero p {
+    margin: 1rem 0;
+    color: #666;
+}
+
+
+
+/* Fade-in animation for content */
+.content-container {
+    opacity: 0;
+    transform: translateY(20px);
+    /* Slight downward movement initially */
+    transition: opacity 0.6s ease-in, transform 0.6s ease-in;
+    /* Smooth transition */
+}
+
+.content-container.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+    /* Reset position */
+}
